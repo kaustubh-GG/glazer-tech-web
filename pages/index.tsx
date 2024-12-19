@@ -129,7 +129,7 @@ const Home: NextPage = () => {
 							</Text>
 						</Box>
 						<Spacer />
-						<a href='https://forms.gle/KtNVJm16mHx8bZSh7' target='_blank'>
+						<a href='https://in.bigin.online/org60035295032/forms/glazer-tech' target='_blank'>
 							<Button
 								mt={{ base: 8, lg: 0 }}
 								size='lg'
@@ -164,14 +164,14 @@ const HeroSection: React.FC = () => {
 						}
 						description={
 							<FallInPlace delay={0.4} fontWeight='medium'>
-								Using AtomX, you can easily build your apps / website in weeks
-								instead of months and then easily scale to millions of users.
+								Easily build your apps / websites in weeks
+								instead of months and scale to million users.
 							</FallInPlace>
 						}
 					>
 						<FallInPlace delay={0.8} mt={4}>
 							<ButtonGroup spacing={4} alignItems='center'>
-								<a href='https://forms.gle/KtNVJm16mHx8bZSh7' target='_blank'>
+								<a href='https://in.bigin.online/org60035295032/forms/glazer-tech' target='_blank'>
 									<Button colorScheme='primary' size='lg'>
 										Contact Us
 									</Button>

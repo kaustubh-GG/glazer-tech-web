@@ -2,15 +2,15 @@ export default {
 	title: 'Loved by people',
 	items: [
 		{
-			name: 'Rahul Sharma',
-			description: 'Founder, Tech Startup',
+			name: 'Pragya Mittal',
+			description: 'Founder, Evify',
 			avatar:
 				'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
 			children: (
 				<>
-					With AtomX I am able to produce high quality dashboard apps and
+					Working with Glazer Tech helped us to produce high quality dashboard app and
 					internal tools without a lot of design skills. The ROI really is
-					amazing. I will be using AtomX for all my future projects.
+					amazing.
 				</>
 			),
 		},
