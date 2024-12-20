@@ -11,7 +11,7 @@ export default {
 				<>
 					Working with { COMPANY_NAME } helped us to produce high quality
 					dashboard app and internal tools without a lot of design
-					skills. The ROI really is amazing.
+					skills. The ROI is really amazing.
 				</>
 			),
 		},
