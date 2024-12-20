@@ -1,7 +1,6 @@
 import * as React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import { COMPANY_NAME } from '../dynamicValues';
 
 import {
 	Container,
@@ -76,6 +75,7 @@ import pricing from 'data/pricing';
 import { Highlights, HighlightsItem } from 'components/highlights';
 import { Section, SectionTitle } from 'components/section';
 import { transparentize } from '@chakra-ui/theme-tools';
+import { COMPANY_NAME } from '../dynamicValues';
 
 const Home: NextPage = () => {
 	const theme = useTheme();
@@ -83,8 +83,8 @@ const Home: NextPage = () => {
 	return (
 		<Box>
 			<SEO
-				title="AtomX"
-				description="AtomX is a platform for building your next big idea."
+				title={COMPANY_NAME}
+				description={`${COMPANY_NAME} is a platform for building your next big idea.`}
 			/>
 			<Box>
 				<HeroSection />
