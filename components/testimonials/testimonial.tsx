@@ -31,6 +31,7 @@ export const Testimonial = ({
 		<Card position='relative' {...rest}>
 			<CardHeader display='flex' flexDirection='row' alignItems='center'>
 				<Avatar
+					textColor='white'
 					borderWidth='1px'
 					borderColor='white'
 					name={name}

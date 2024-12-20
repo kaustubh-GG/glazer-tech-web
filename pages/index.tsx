@@ -1,6 +1,8 @@
 import * as React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import { COMPANY_NAME } from '../dynamicValues';
+
 import {
 	Container,
 	Box,
@@ -81,8 +83,8 @@ const Home: NextPage = () => {
 	return (
 		<Box>
 			<SEO
-				title='AtomX'
-				description='AtomX is a platform for building your next big idea.'
+				title="AtomX"
+				description="AtomX is a platform for building your next big idea."
 			/>
 			<Box>
 				<HeroSection />
@@ -100,40 +102,50 @@ const Home: NextPage = () => {
 					</Text>
 				</HStack> */}
 				<Box
-					alignItems='flex-start'
-					overflow='hidden'
-					position='relative'
+					alignItems="flex-start"
+					overflow="hidden"
+					position="relative"
 					p={12}
-					maxW='1100px'
-					m='auto'
-					rounded='2xl'
+					maxW="1100px"
+					m="auto"
+					rounded="2xl"
 				>
 					<Box
 						bgGradient={`linear(to-br, ${transparentize(
 							'pink.200',
 							0.8
-						)(theme)}, ${transparentize('purple.500', 0.8)(theme)})`}
-						opacity='1'
-						position='absolute'
-						inset='0px'
-						pointerEvents='none'
-						zIndex='0'
+						)(theme)}, ${transparentize(
+							'purple.500',
+							0.8
+						)(theme)})`}
+						opacity="1"
+						position="absolute"
+						inset="0px"
+						pointerEvents="none"
+						zIndex="0"
 						_dark={{ opacity: 0.5, filter: 'blur(50px)' }}
 					/>
 					<HStack flexDirection={{ base: 'column', lg: 'row' }}>
 						<Box>
 							<Heading>Build Something Great</Heading>
-							<Text mt={2} maxW='xl'>
-								We help all entrepreneurs with their 1st version of tech at a
-								very affordable rate so that they can launch their idea easily.
+							<Text
+								mt={2}
+								maxW="xl"
+							>
+								We help all entrepreneurs with their 1st version
+								of tech at a very affordable rate so that they
+								can launch their idea easily.
 							</Text>
 						</Box>
 						<Spacer />
-						<a href='https://in.bigin.online/org60035295032/forms/glazer-tech' target='_blank'>
+						<a
+							href="https://in.bigin.online/org60035295032/forms/glazer-tech"
+							target="_blank"
+						>
 							<Button
 								mt={{ base: 8, lg: 0 }}
-								size='lg'
-								colorScheme='purple'
+								size="lg"
+								colorScheme="purple"
 								rightIcon={<FiArrowRight />}
 							>
 								Contact Us
@@ -148,14 +160,24 @@ const Home: NextPage = () => {
 
 const HeroSection: React.FC = () => {
 	return (
-		<Box position='relative' overflow='hidden'>
-			<BackgroundGradient height='100%' />
-			<Container maxW='container.xl' pt={{ base: 40 }} pb='40'>
-				<Stack direction={{ base: 'column', lg: 'row' }} alignItems='center'>
+		<Box
+			position="relative"
+			overflow="hidden"
+		>
+			<BackgroundGradient height="100%" />
+			<Container
+				maxW="container.xl"
+				pt={{ base: 40 }}
+				pb="40"
+			>
+				<Stack
+					direction={{ base: 'column', lg: 'row' }}
+					alignItems="center"
+				>
 					<Hero
-						id='home'
-						justifyContent='flex-start'
-						px='0'
+						id="home"
+						justifyContent="flex-start"
+						px="0"
 						title={
 							<FallInPlace>
 								Build Beautiful
@@ -163,16 +185,31 @@ const HeroSection: React.FC = () => {
 							</FallInPlace>
 						}
 						description={
-							<FallInPlace delay={0.4} fontWeight='medium'>
+							<FallInPlace
+								delay={0.4}
+								fontWeight="medium"
+							>
 								Easily build your apps / websites in weeks
 								instead of months and scale to million users.
 							</FallInPlace>
 						}
 					>
-						<FallInPlace delay={0.8} mt={4}>
-							<ButtonGroup spacing={4} alignItems='center'>
-								<a href='https://in.bigin.online/org60035295032/forms/glazer-tech' target='_blank'>
-									<Button colorScheme='primary' size='lg'>
+						<FallInPlace
+							delay={0.8}
+							mt={4}
+						>
+							<ButtonGroup
+								spacing={4}
+								alignItems="center"
+							>
+								<a
+									href="https://in.bigin.online/org60035295032/forms/glazer-tech"
+									target="_blank"
+								>
+									<Button
+										colorScheme="primary"
+										size="lg"
+									>
 										Contact Us
 									</Button>
 								</a>
@@ -199,23 +236,26 @@ const HeroSection: React.FC = () => {
 						</FallInPlace>
 					</Hero>
 					<Box
-						height='600px'
-						position='absolute'
+						height="600px"
+						position="absolute"
 						display={{ base: 'none', lg: 'block' }}
 						left={{ lg: '60%', xl: '55%' }}
-						width='80vw'
-						maxW='1100px'
-						margin='0 auto'
+						width="80vw"
+						maxW="1100px"
+						margin="0 auto"
 					>
 						<FallInPlace delay={1}>
-							<Box overflow='hidden' height='100%'>
+							<Box
+								overflow="hidden"
+								height="100%"
+							>
 								<Image
-									src='/static/screenshots/list.png'
-									layout='fixed'
+									src="/static/screenshots/list.png"
+									layout="fixed"
 									width={1200}
 									height={762}
-									alt='Screenshot of a ListPage in Saas UI Pro'
-									quality='75'
+									alt="Screenshot of a ListPage in Saas UI Pro"
+									quality="75"
 									priority
 								/>
 							</Box>
@@ -225,12 +265,12 @@ const HeroSection: React.FC = () => {
 			</Container>
 
 			<Features
-				id='features'
+				id="features"
 				columns={[1, 2, 4]}
 				iconSize={4}
-				innerWidth='container.xl'
-				pt='20'
-				title='Features'
+				innerWidth="container.xl"
+				pt="20"
+				title="Features"
 				features={[
 					{
 						title: 'Less development time',
@@ -263,21 +303,24 @@ const HeroSection: React.FC = () => {
 					{
 						title: 'Clean Code',
 						icon: FiThumbsUp,
-						description: 'Clean code that is easy to understand and maintain.',
+						description:
+							'Clean code that is easy to understand and maintain.',
 						iconPosition: 'left',
 						delay: 1.2,
 					},
 					{
 						title: 'Well Maintained',
 						icon: FiThumbsUp,
-						description: 'Well maintained code that is easy to understand.',
+						description:
+							'Well maintained code that is easy to understand.',
 						iconPosition: 'left',
 						delay: 1.2,
 					},
 					{
 						title: 'Fully Responsive',
 						icon: FiThumbsUp,
-						description: 'Responsive code that works on all devices.',
+						description:
+							'Responsive code that works on all devices.',
 						iconPosition: 'left',
 						delay: 1.2,
 					},
@@ -299,26 +342,40 @@ const HighlightsSection = () => {
 	// const { value, onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react');
 
 	return (
-		<Highlights id='about-us'>
-			<HighlightsItem colSpan={[1, null, 3]} title='About us'>
-				<VStack alignItems='flex-start' spacing='8'>
-					<Text color='muted' fontSize='xl'>
-						Data shows that almost ~95% of the entrepreneurs are not able to
-						launch their 1st version of the idea due to the lack of technical
-						knowledge or high amount of money needed to build the 1st version of
-						their app/website.
-						<p>Atomx is a tech company with the aim to solve above problem.</p>
+		<Highlights id="about-us">
+			<HighlightsItem
+				colSpan={[1, null, 3]}
+				title="About us"
+			>
+				<VStack
+					alignItems="flex-start"
+					spacing="8"
+				>
+					<Text
+						color="muted"
+						fontSize="xl"
+					>
+						Data shows that almost ~95% of the entrepreneurs are not
+						able to launch their 1st version of the idea due to the
+						lack of technical knowledge or high amount of money
+						needed to build the 1st version of their app/website.
 						<p>
-							Our mission is to democratize software development, achieving 10x
-							speed at almost 25% of the cost.
+							{COMPANY_NAME} is a tech company with the aim to
+							solve above problem.
 						</p>
 						<p>
-							We have developed a proprietary technology which can be used to
-							deploy applications at much lower cost/time.
+							Our mission is to democratize software development,
+							achieving 10x speed at almost 25% of the cost.
 						</p>
 						<p>
-							Using our backend, you can easily build your apps/website in weeks
-							instead of months and then easily scale to millions of users.
+							We have developed a proprietary technology which can
+							be used to deploy applications at much lower
+							cost/time.
+						</p>
+						<p>
+							Using our backend, you can easily build apps /
+							websites in weeks instead of months and scale to
+							million users.
 						</p>
 					</Text>
 
@@ -360,14 +417,17 @@ const HighlightsSection = () => {
 			</HighlightsItem> */}
 			<HighlightsItem
 				colSpan={[1, null, 3]}
-				title='Start your next idea two steps ahead'
+				title="Start your next idea two steps ahead"
 			>
-				<Text color='muted' fontSize='lg'>
-					With our inbuilt libraries, you will get access to many pre-built
-					modules from day one. This will help you to reduce your development
-					time significantly.
+				<Text
+					color="muted"
+					fontSize="lg"
+				>
+					With our inbuilt libraries, you will get access to many
+					pre-built modules from day one. This will help you to reduce
+					your development time significantly.
 				</Text>
-				<Wrap mt='8'>
+				<Wrap mt="8">
 					{[
 						'apis',
 						'android app',
@@ -386,10 +446,10 @@ const HighlightsSection = () => {
 						.map((value) => (
 							<Tag
 								key={value}
-								variant='subtle'
-								colorScheme='purple'
-								rounded='full'
-								px='3'
+								variant="subtle"
+								colorScheme="purple"
+								rounded="full"
+								px="3"
 							>
 								{value}
 							</Tag>
@@ -420,34 +480,36 @@ const HighlightsSection = () => {
 const FeaturesSection = () => {
 	return (
 		<Features
-			id='services'
+			id="services"
 			title={
 				<Heading
-					lineHeight='short'
+					lineHeight="short"
 					fontSize={['2xl', null, '4xl']}
-					textAlign='left'
-					as='p'
+					textAlign="left"
+					as="p"
 				>
 					Our Services
 				</Heading>
 			}
 			description={
 				<>
-					Software development is tough as its involve multiple steps and each
-					step involves expertise in terms of technology and expertise. We
-					understand that you being an entrepreneur, your core focus is on the
-					business side. So, our solution includes full stack development with
-					Infrastructure to innovate and scale with ease.
+					Software development is tough as its involve multiple steps
+					and each step involves expertise in terms of technology and
+					expertise. We understand that you being an entrepreneur,
+					your core focus is on the business side. So, our solution
+					includes full stack development with Infrastructure to
+					innovate and scale with ease.
 				</>
 			}
-			align='left'
+			align="left"
 			columns={[1, 2, 3]}
 			iconSize={4}
 			features={[
 				{
 					title: 'UI/UX Development',
 					icon: FiBox,
-					description: 'Attractive and responsive design development.',
+					description:
+						'Attractive and responsive design development.',
 					variant: 'inline',
 				},
 				{
@@ -483,13 +545,15 @@ const FeaturesSection = () => {
 				{
 					title: 'Testing',
 					icon: FiToggleLeft,
-					description: 'No compromise on quality. We test your app thoroughly.',
+					description:
+						'No compromise on quality. We test your app thoroughly.',
 					variant: 'inline',
 				},
 				{
 					title: 'Monitoring',
 					icon: FiTerminal,
-					description: 'Always keep an eye on your app. We setup it for you.',
+					description:
+						'Always keep an eye on your app. We setup it for you.',
 					variant: 'inline',
 				},
 				{
@@ -506,20 +570,24 @@ const FeaturesSection = () => {
 const TechnologySection = () => {
 	const cardBg = useColorModeValue('gray.50', 'gray.700');
 	return (
-		<Section id='tech'>
+		<Section id="tech">
 			<SectionTitle
-				title='Focus on solving bigger problems'
+				title="Focus on solving bigger problems"
 				description={
 					<>
-						We don&apos;t like to re-invent the wheel, neither should you. We
-						selected the most productive and established tech stack from the
-						ecosystem and build on top of it so that you can launch your idea in
-						the least time possible. Some of our key tech stack are -
+						We don&apos;t like to re-invent the wheel, neither
+						should you. We selected the most productive and
+						established tech stack from the ecosystem and build on
+						top of it so that you can launch your idea in the least
+						time possible. Some of our key tech stack are -
 					</>
 				}
 			></SectionTitle>
 
-			<SimpleGrid columns={{ base: 2, lg: 4, xl: 6 }} spacing={4}>
+			<SimpleGrid
+				columns={{ base: 2, lg: 4, xl: 6 }}
+				spacing={4}
+			>
 				{[
 					{
 						title: 'Python',
@@ -613,12 +681,23 @@ const TechnologySection = () => {
 					},
 				].map((item, i) => {
 					return (
-						<a href={item.href} key={i} target='_blank' rel='noreferrer'>
-							<VStack px={4} py={6} bg={cardBg} rounded='xl' spacing={4}>
+						<a
+							href={item.href}
+							key={i}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<VStack
+								px={4}
+								py={6}
+								bg={cardBg}
+								rounded="xl"
+								spacing={4}
+							>
 								<Box>
 									<item.icon size={40} />
 								</Box>
-								<Text size='md'>{item.title}</Text>
+								<Text size="md">{item.title}</Text>
 							</VStack>
 						</a>
 					);
@@ -644,13 +723,21 @@ const TestimonialsSection = () => {
 		<Testimonials
 			title={testimonials.title}
 			columns={[1, 2, 3]}
-			innerWidth='container.xl'
+			innerWidth="container.xl"
 		>
 			<>
 				{columns.map((column, i) => (
-					<Stack key={i} spacing='8'>
+					<Stack
+						key={i}
+						spacing="8"
+					>
 						{column.map((t, i) => (
-							<Testimonial key={i} role={''} avatar='' {...t} />
+							<Testimonial
+								key={i}
+								role={''}
+								avatar=""
+								{...t}
+							/>
 						))}
 					</Stack>
 				))}
@@ -662,7 +749,11 @@ const TestimonialsSection = () => {
 const PricingSection = () => {
 	return (
 		<Pricing {...pricing}>
-			<Text p='8' textAlign='center' color='muted'>
+			<Text
+				p="8"
+				textAlign="center"
+				color="muted"
+			>
 				VAT may be applicable depending on your location.
 			</Text>
 		</Pricing>
