@@ -139,7 +139,7 @@ const Home: NextPage = () => {
 						</Box>
 						<Spacer />
 						<a
-							href="https://in.bigin.online/org60035295032/forms/glazer-tech"
+							href="https://in.bigin.online/org60035295032/forms/build-something-great"
 							target="_blank"
 						>
 							<Button
@@ -203,7 +203,7 @@ const HeroSection: React.FC = () => {
 								alignItems="center"
 							>
 								<a
-									href="https://in.bigin.online/org60035295032/forms/glazer-tech"
+									href="https://in.bigin.online/org60035295032/forms/build-something-great"
 									target="_blank"
 								>
 									<Button
