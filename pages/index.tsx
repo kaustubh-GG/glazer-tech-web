@@ -752,9 +752,7 @@ const PricingSection = () => {
 	return (
 		<Pricing {...pricing}>
 		<div
-			p="8"
-			textAlign="center"
-			color="muted"
+			
 		>
 			VAT may be applicable depending on your location.
 			{/* <DocxViewer fileName="document.docx" /> */}
