@@ -22,6 +22,8 @@
     "contentlayer": "^0.3.2",
     "date-fns": "^2.29.3",
     "framer-motion": "^10.12.4",
+    "libreoffice-convert": "^1.6.0",
+    "mammoth": "^1.8.0",
     "next": "13.3.1",
     "next-contentlayer": "^0.3.2",
     "next-seo": "^6.0.0",

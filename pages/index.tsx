@@ -76,6 +76,7 @@ import { Highlights, HighlightsItem } from 'components/highlights';
 import { Section, SectionTitle } from 'components/section';
 import { transparentize } from '@chakra-ui/theme-tools';
 import { COMPANY_NAME } from '../dynamicValues';
+import DocxViewer from 'components/DocxViewer';
 
 const Home: NextPage = () => {
 	const theme = useTheme();
@@ -152,6 +153,7 @@ const Home: NextPage = () => {
 							</Button>
 						</a>
 					</HStack>
+					<DocxViewer fileName="document.docx" />
 				</Box>
 			</Box>
 		</Box>
@@ -749,13 +751,15 @@ const TestimonialsSection = () => {
 const PricingSection = () => {
 	return (
 		<Pricing {...pricing}>
-			<Text
-				p="8"
-				textAlign="center"
-				color="muted"
-			>
-				VAT may be applicable depending on your location.
-			</Text>
+		<div
+			p="8"
+			textAlign="center"
+			color="muted"
+		>
+			VAT may be applicable depending on your location.
+			{/* <DocxViewer fileName="document.docx" /> */}
+		</div>
+
 		</Pricing>
 	);
 };

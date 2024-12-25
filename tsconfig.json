@@ -28,6 +28,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-  ],
+, "pages/privacy.js"  ],
   "exclude": ["node_modules"]
 }
