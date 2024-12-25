@@ -23,7 +23,7 @@ const DocxViewer = ({ fileName }) => {
       // Navigate to privacy page
       router.push('/privacy');
     } catch (err) {
-      setError('Failed to open document');
+      // setError('Failed to open document');
       console.error('Error:', err);
     } finally {
       setLoading(false);
